@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_ativar_localizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:checked="true"
+        android:text="Ativar Localização" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/check_riven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="Joga de Riven" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/check_boxbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="Fan do BoxBox" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/check_perde_darius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="Perde pra Mono-Darius top" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_testar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Wifi status:" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/img_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wifi_on"/>
+
+        <!--<ToggleButton
+            android:id="@+id/tgl_wifi_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:drawableTop="@drawable/ic_wifi_on"
+            android:text="Online"
+            android:textOff="Offline"
+            android:textOn="Online" />-->
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="radiozada"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="radiozada"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="radiozada"/>
+
+
+    </RadioGroup>
+</LinearLayout>
